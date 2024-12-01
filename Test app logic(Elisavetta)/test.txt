@@ -1,0 +1,4 @@
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"username": "Liza", "id": 123456756}'
+
+curl -X PUT http://localhost:3000/users/1 -H "Content-Type: application/json" -d '{"username": "Liza", "e-mail": 1}'
+curl -X PATCH http://localhost:3000/users/1/name -H "Content-Type: application/json" -d '{"username": "Liza", "e-mail": 1}'
