@@ -7,10 +7,10 @@
             "command": "g++",
             "args": [
                 "-I",
-                "D:/CFU/Nilfgaard/Nilfgaard/Authorization server(Artemij)",
-                "D:/CFU/Nilfgaard/Nilfgaard/Authorization server(Artemij)/authorization_server.cpp",
+                "D:/CFU/Nilfgaard/Nilfgaard/Authorization_server_Artemij",
+                "D:/CFU/Nilfgaard/Nilfgaard/Authorization_server_Artemij/authorization_server.cpp",
                 "-o",
-                "authorization_server"
+                "D:/CFU/Nilfgaard/Nilfgaard/Authorization_server_Artemij/authorization_server.exe"
             ],
             "group": {
                 "kind": "build",
