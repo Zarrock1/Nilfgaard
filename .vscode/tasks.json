@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-I",
+                "D:/CFU/Nilfgaard/Nilfgaard/Authorization server(Artemij)",
+                "D:/CFU/Nilfgaard/Nilfgaard/Authorization server(Artemij)/authorization_server.cpp",
+                "-o",
+                "authorization_server"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Компиляция C++ программы"
+        }
+    ]
+}
