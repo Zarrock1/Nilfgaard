@@ -1,0 +1,17 @@
+curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"username": "Liza", "id": 123456756}'
+
+curl -X PUT http://localhost:3000/users/1 -H "Content-Type: application/json" -d '{"username": "Liza", "id": 1}'
+curl -X PATCH http://localhost:3000/users/1/name -H "Content-Type: application/json" -d '{"username": "Золтан Хивай", "id": 1}'
+curl -X PATCH http://localhost:3000/users/1/status -H "Content-Type: application/json" -d '{"zablokirovan": "true", "id": 1}'
+curl -X PATCH http://localhost:3000/users/1/role -H "Content-Type: application/json" -d '[{"id":1,"rolename":"vasya"}, {"id":2,"rolename":"vasya"}, {"id":3,"rolename":"vasya"}]'
+
+curl -X PATCH http://localhost:3000/disciplins/1 -H "Content-Type: application/json" -d '{"id":1,"name":"vasya", "discription":"Как быть Васей"}'
+curl -X POST http://localhost:3000/gettoken -H "Content-Type: application/json" -d '{"userlogin":"Liza","useraccess":["user:list:read","user:fullName:write","user:block:read"]}'
+curl -X PATCH http://localhost:3000/testapi/disciplins/1/tests/2 -H "Content-Type: application/json" -d '{"active":true}'
+curl -X POST http://localhost:3000/testapi/disciplins/1/tests -H "Content-Type: application/json" -d '{"name":"Легенды и мифы древнего Нильфгаарда"}'
+
+
+-H "Authorization: Bearer 
+
+curl -X GET http://localhost:3000/api/users \
+-H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybG9naW4iOiJMaXphIiwidXNlcmFjY2VzcyI6WyJ1c2VyOmxpc3Q6cmVhZCIsInVzZXI6ZnVsbE5hbWU6d3JpdGUiLCJ1c2VyOmJsb2NrOnJlYWQiXSwiaXNzIjoiQXNzaXJldmFyQW5haGlkIiwiZXhwIjoxNzM0MTE4NTIyfQ.HkUqfmARuB7JP9eecAz6QKowxSaek_FxhWNOnW4hkcU"
